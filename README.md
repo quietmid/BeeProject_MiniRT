@@ -14,7 +14,7 @@ A mini ray tracing project built in C using the MLX42 Library. Through miniRT, w
 ## Examples
 Example 1
 <div align="left">
-  <img src="./images/sphere.png" style="width: 50%">
+  <img src="./images/sphere.png" style="width: 50%"><br>
   <figcaption>Sphere with no background</figcaption>
 </div>
 Example 2
