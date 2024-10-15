@@ -21,5 +21,11 @@ A mini ray tracing project built in C using the MLX42 Library. Through miniRT, w
 Multiple object plus spheres to form a Mickey shape with plane as background
 </div>
 
+## Testing
+You can test the program by git cloning the project and then head into Makefile and find the below codes <br>
+```
+LIBMLX_LINUX	=	-ldl -lglfw -lm
+LIBMLX_OS		=	-L$(LIBMLX_DIR)/build -lmlx42 -lglfw -framework Cocoa -framework OpenGL -framework IOKit
+```
 ## Sources:
 - The Ray Tracer Challenge (http://raytracerchallenge.com)
