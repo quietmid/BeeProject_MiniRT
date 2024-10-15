@@ -2,7 +2,7 @@
 
 
 ## Overview
-A mini ray tracing project built in C using the MLX42 Library. Through miniRT, we learn the fundamentals and build a basic ray tracer that can render simple 3D scenes with objects such as, plane, cylinder and sphere. This was a group project and I worked on with the amazing and organized Lumi_K(https://github.com/lkilpela).
+A mini ray tracing project built in C using the MLX42 Library. Through miniRT, we learn the fundamentals and build a basic ray tracer that can render simple 3D scenes with objects such as, plane, cylinder and sphere. This was a group project and I worked on with (and learned much much from) the amazing and super organized Lumi_K(https://github.com/lkilpela).
 
 ## Core Features
 - Parsing: Ensure the correct file and data are passed through the program, it will exit and return an error message when it parsed an invalid argument.
