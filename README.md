@@ -13,11 +13,11 @@ A mini ray tracing project built in C using the MLX42 Library. Through miniRT, w
 
 ## Examples
 <h1></h1>
+Example 1
 <div align="left">
   <img src="./images/sphere.png" style="width: 50%">
 </div>
-Example 1
-[Sphere with no background](./images/sphere.png)
+Sphere with no background
 Example 2
 [Mickey with extra shapes and plane background](./images/mickey.png)
 
