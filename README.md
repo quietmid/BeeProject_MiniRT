@@ -27,5 +27,17 @@ You can test the program by git cloning the project and then head into Makefile 
 LIBMLX_LINUX	=	-ldl -lglfw -lm
 LIBMLX_OS		=	-L$(LIBMLX_DIR)/build -lmlx42 -lglfw -framework Cocoa -framework OpenGL -framework IOKit
 ```
+Comment out the line that's not your system then scroll down to <br>
+```
+$(NAME)
+```
+Make sure the correct one is avaiable then you can <br>
+```
+make
+```
+You can call the function by 
+```
+./minirt scene/basic/sp.rt
+```
 ## Sources:
 - The Ray Tracer Challenge (http://raytracerchallenge.com)
