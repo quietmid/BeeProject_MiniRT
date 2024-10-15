@@ -29,7 +29,13 @@ LIBMLX_OS		=	-L$(LIBMLX_DIR)/build -lmlx42 -lglfw -framework Cocoa -framework Op
 ```
 Comment out the line that's not your system then scroll down to <br>
 ```
-$(NAME)
+#MacOS
+$(NAME): $(LIBFT) $(LIBMLX) $(OBJECTS)
+	@$(CC_FULL) $(OBJECTS) $(LIBFT) $(LIBMLX) $(LIBMLX_OS) $(RPATH_FLAGS) -o $
+#Linux
+# $(NAME): $(LIBFT) $(LIBMLX) $(OBJECTS)
+# 	@$(CC_FULL) $(OBJECTS) $(LIBFT) $(LIBMLX) $(LIBMLX_LINUX) $(RPATH_FLAGS) -o 
+
 ```
 Make sure the correct one is avaiable then you can <br>
 ```
