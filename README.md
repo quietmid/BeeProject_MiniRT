@@ -14,16 +14,14 @@ A mini ray tracing project built in C using the MLX42 Library. Through miniRT, w
 ## Examples
 Example 1
 <div align="left">
-  <figure>
   <img src="./images/sphere.png" style="width: 50%">
   <figcaption>Sphere with no background</figcaption>
-  </figure>
 </div>
 Example 2
 <div align="left">
   <img src="./images/mickey.png" style="width: 50%">
 Multiple object plus spheres to form a Mickey shape with plane as background
-</div>div
+</div>
 
 ## Sources:
 - The Ray Tracer Challenge (http://raytracerchallenge.com)
