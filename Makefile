@@ -6,7 +6,7 @@
 #    By: jlu <jlu@student.hive.fi>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/30 10:55:51 by lkilpela          #+#    #+#              #
-#    Updated: 2024/10/15 23:30:10 by jlu              ###   ########.fr        #
+#    Updated: 2024/10/15 23:46:49 by jlu              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,10 +27,10 @@ LIBFT_INCLUDES	=	$(LIBFT_DIR)/include
 LIBMLX_DIR		=	./lib/MLX42
 LIBMLX			=	$(LIBMLX_DIR)/build/libmlx42.a
 LIBMLX_LINUX	=	-ldl -lglfw -lm
-# LIBMLX_OS		=	-L$(LIBMLX_DIR)/build -lmlx42 -lglfw -framework Cocoa -framework OpenGL -framework IOKit
+LIBMLX_OS		=	-L$(LIBMLX_DIR)/build -lmlx42 -lglfw -framework Cocoa -framework OpenGL -framework IOKit
 # joseph at home
-HDRS	 		= 	-I $(INCLUDES) -I $(LIBFT_INCLUDES) -I $(LIBMLX_INCLUDES) -I /Users/josephlu/.brew/opt/glfw/include
-LIBMLX_OS		= 	-L/Users/josephlu/.brew/opt/glfw/lib -lglfw -framework Cocoa -framework OpenGL -framework IOKit
+# HDRS	 		= 	-I $(INCLUDES) -I $(LIBFT_INCLUDES) -I $(LIBMLX_INCLUDES) -I /Users/josephlu/.brew/opt/glfw/include
+# LIBMLX_OS		= 	-L/Users/josephlu/.brew/opt/glfw/lib -lglfw -framework Cocoa -framework OpenGL -framework IOKit
 # joseph at home
 LIBMLX_INCLUDES	=	$(LIBMLX_DIR)/include/
 RPATH_FLAGS		=	-Wl,-rpath,/usr/local/lib/
@@ -95,6 +95,7 @@ clone_mlx42:
 libmlx: clone_mlx42
 	@cmake $(LIBMLX_DIR) -B $(LIBMLX_DIR)/build && make -C $(LIBMLX_DIR)/build -j4
 
+#Linux
 # $(NAME): $(LIBFT) $(LIBMLX) $(OBJECTS)
 # 	@echo "--------------------------------------------"
 # 	@$(CC_FULL) $(OBJECTS) $(LIBFT) $(LIBMLX) $(LIBMLX_LINUX) $(RPATH_FLAGS) -o $(NAME) 
