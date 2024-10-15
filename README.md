@@ -12,6 +12,10 @@ A mini ray tracing project built in C using the MLX42 Library. Through miniRT, w
 - Rendering: With all the info parsed and calculated, each pixel will be rendered and display on the screen. 
 
 ## Examples
+<h1></h1>
+<div align="left">
+  <img src="./images/sphere.png" style="width: 50%">
+</div>
 Example 1
 [Sphere with no background](./images/sphere.png)
 Example 2
